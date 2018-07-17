@@ -1,0 +1,520 @@
+
+$header-height: 100vh
+$side-margins: 0 17rem
+$green: #66a900
+$poppins: Poppins
+
+*
+	box-sizing: border-box
+
+
+
+body
+	background: #fff
+	position: relative
+
+header
+	height: $header-height
+	width: 100%
+
+.section_margin
+	margin: $side-margins
+
+
+		margin-right: 5rem
+.margin-top-2
+	margin-top: 2rem
+
+a
+	color: #fff
+
+.logo img
+	width: 4rem
+
+.top_bar
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding-top: 2rem
+
+.baner_img
+	position: absolute
+	top: 0
+	left: 0
+	display: inline-block
+	z-index: -900
+	width: 100%
+	height: $header-height
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
+
+.baner_caption
+	position: absolute
+	top: 50%
+	margin: $side-margins
+
+.baner_caption-title
+	color: #fff
+	font-size: 3.3rem
+	font-family: $poppins
+	font-weight: bold
+	text-transform: uppercase
+
+.baner_caption-description
+	color: #fff
+	font-size: 1.3rem
+	font-family: Times New Roman
+	line-height: 2rem
+	margin-top: 1rem
+.header_menu
+	ul
+		display: flex
+		li
+			font-size: 1.1rem
+			margin: 0 1rem
+
+.wave_top
+	background-image: url('../img/wave-top.png')
+	background-size: contain
+	background-repeat: no-repeat
+	width: 100%
+	height: 100px
+
+
+.section_title
+	padding: 2rem 0
+	color: #444
+	font-family: $poppins
+	font-weight: bold
+	font-size: 2rem
+	display: block
+	width: 100%
+	letter-spacing: 0
+
+.section_number
+	color: #e8e8e8
+	font-family: Times New Roman
+	font-weight: bold
+	font-size: 4rem
+
+
+.word-green
+	color: #66a900
+
+.content_container
+	display: flex
+	flex-direction: row
+	margin-top: 4rem
+	margin-bottom: 7rem
+
+.margin-01-separator
+	margin-right: 8rem
+
+.margin-02
+	margin-left: 5rem
+	&-separator
+		margin-left: 10rem
+
+.margin-03-separator
+	margin-right: 5rem
+
+.flex-center
+	display: flex
+	align-items: center
+	justify-content: center
+
+.align_right
+	align-items: center
+	justify-content: flex-end
+
+.align_left
+	align-items: center
+	justify-content: flex-start
+
+.align_center
+	align-items: center
+	justify-content: center
+
+.align_center-top
+	align-items: flex-start
+	justify-content: center
+
+.align_column
+	flex-direction: column
+
+.position_right
+	justify-content: flex-end
+
+.position_left
+	align-self: flex-start
+
+.wider-text
+	width: 55% !important
+	margin-bottom: 3rem
+
+.section_text
+	font-size: 1.2rem
+	line-height: 2rem
+	width: 40%
+	color: silver
+	letter-spacing: .1rem
+
+.bullet_green
+	color: #fff
+	background-color: #66a900
+	border-radius: 50%
+	height: 3rem
+	width: 3rem
+	display: inline-block
+	text-align: center
+	line-height: 3rem
+	margin: .5rem 1rem .5rem 0
+	font-family: Times New Roman
+
+.ol_text
+	font-family: $poppins
+	font-weight: bold
+
+.free_registration
+	height: 325px
+	background-image: url('../img/wave-bottom.png')
+	background-size: cover
+	background-repeat: no-repeat
+	// margin-bottom: 9rem
+	display: flex
+	align-items: flex-end
+
+.free_registration_content
+	align-items: center
+	display: flex
+	flex-direction: row
+	justify-content: center
+	margin-bottom: 3rem
+	width: 100%
+
+.reg_con-left
+	color: #fff
+	font-size: 1rem
+	font-family: $poppins
+	letter-spacing: .1rem
+	h2
+		font-size: 2.8rem
+		font-family: Times New Roman
+		font-weight: bold
+		letter-spacing: 0.1rem
+		margin-bottom: 1rem
+
+.reg_con-middle
+	margin: 40px 3rem 0 3rem
+	img
+		width: 220px
+.reg_con-right
+
+.free_reg_button
+	background-color: #fff
+	border: none
+	border-radius: 5px
+	width: 300px
+	height: 60px
+	// padding: 1.5rem 3rem
+	font-size: 1.3rem
+	color: #66a900
+	font-weight: bold
+	font-family: Times New Roman
+
+.why-us-ul
+	list-style-image: url('../img/bullet.png')
+	margin-top: 4rem
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	li
+		float: left
+		margin: 0 0 2rem 0
+		width: 45%
+
+	h3
+		font-family: $poppins
+		font-weight: bold
+		color: #000
+	p
+		font-family: $poppins
+		font-size: .9rem
+		font-weight: normal
+
+.carousel_container
+	width: 740px
+	height: 400px
+	margin-right: 50px
+	position: relative
+	border: 1px solid transparent
+
+	.carousel_navigation
+		margin-top: 25%
+		display: flex
+		justify-content: center
+		z-index: 100
+		.carousel_navigation-button
+			display: flex
+			align-items: center
+			justify-content: center
+			color: #fff
+			font-family: $poppins
+			border-radius: 100%
+			height: 30px
+			width: 30px		
+			background-color: #333
+			border: 3px solid transparent
+			-webkit-background-clip: padding-box	
+			&:hover
+				background-color: #66a900
+				border: 3px solid rgba(102, 169, 0, .35)
+				-webkit-background-clip: padding-box
+				cursor: pointer
+
+		&-left
+			margin-right: 170px
+		&-right
+			margin-left: 170px
+
+	.carousel_elements
+		position: absolute
+		top: 0
+		z-index: -100
+		.carousel_element
+			position: absolute
+			height: 370px
+			display: inline-block
+		.active
+			z-index: 300
+		.not-active
+			opacity: .1
+			z-index: 200
+		.el_left
+			left: 40px
+		.el_right
+			left: 350px
+		.el_center
+			left: 150px
+
+
+.quote
+	font-style: italic
+	font-size: 1rem
+
+.quote:before
+	content: ''
+	height: 18px
+	background-image: url('../img/quote.png')
+	display: block
+	position: relative
+	left: -35px
+	top: 10px
+	width: 25px
+
+.quote_author
+	color: #000
+	display: block
+	font-family: $poppins
+	font-size: 1rem
+	font-weight: 700
+	margin-top: 1.6rem
+.quote_desc
+	color: silver
+	font-family: Time New Roman
+
+
+.pricing-plans
+	width: 1210px
+
+.tables
+	display: flex
+
+.table
+	background-color: #fff
+	border-collapse: collapse
+	border-spacing: 0
+	box-shadow: 0px 0px 24px 5px rgba(230, 230, 230, .8)
+	height: 420px
+	margin: 1rem
+	width: 370px
+	z-index: 100
+	transform: scale(1)	
+	animation: out .3s ease forwards
+	&:hover
+		animation: pop .4s ease forwards
+		transform: scale(1)		
+		z-index: 200
+	&:hover .plan
+		& p
+			color: #fff
+			font-weight: 800
+			font-size: 1rem
+		&:before
+			content: ''
+			animation: hov-plan .3s ease forwards
+			background-color: $green				
+			width: 0px
+			height: 100%
+			position: absolute
+			z-index: 150
+		border-left: 3px solid #000
+		border-right: 3px solid #000
+	&:hover .order-now
+		animation: rotate .5s .6s ease forwards
+		color: $green
+		text-decoration: underline
+		transform: rotate(0)
+td
+	align-items: center
+	display: flex
+	justify-content: center
+	position: relative
+	&.price
+		color: #333
+		height: 60px
+		font-family: $poppins
+		font-size: 3rem
+		font-weight: 800
+		margin-top: 2rem
+	&.target
+		color: #aaa
+		height: 30px
+		margin-bottom: 20px
+	&.plan
+		color: #aaa
+		background-color: #f6f6f6
+		border-left: 3px solid $green
+		border-right: 3px solid $green
+		height: 40px
+		font-family: $poppins
+		font-size: .8rem
+		font-weight: 300
+		text-transform: uppercase
+		letter-spacing: 2px
+		position: relative
+		z-index: 200
+		& p
+			z-index: 500
+
+
+	&.description
+		color: #c7c7c7
+		line-height: 1.5rem
+		padding: 1.5rem
+		text-align: center
+	&.order
+		margin-bottom: 20px
+		z-index: 100
+	&.footer
+		height: 73px			
+.order-now
+	cursor: pointer
+	background: none
+	border: none
+	font-family: $poppins
+	font-size: .8rem
+	font-weight: 700
+	text-transform: uppercase
+	letter-spacing: 1px
+	padding: 1rem
+	&:hover
+		color: $green
+		text-decoration: underline
+
+@keyframes out
+	0%
+		transform: scale(1.2)
+	50%
+		transform: scale(.8)
+	75%
+		transform: scale(1.05)
+	100%
+		transform: scale(1)	
+@keyframes pop
+	0%
+		transform: scale(1)
+	50%
+		transform: scale(1.2)
+	75%
+		transform: scale(1.1)
+	100%
+		transform: scale(1.2)
+
+@keyframes hov-plan
+	to
+		width: 100%
+		z-index: 100
+
+@keyframes rotate
+	0%
+		transform: rotate(0)
+	20%
+		transform: rotate(15deg)
+	50%
+		transform: rotate(-15deg)
+	80%
+		transform: rotate(10deg)
+	100%
+		transform: rotate(0)
+
+@keyframes jump
+	0%
+		transform: translateY(0)
+	20%
+		transform: translateY(-10px)
+	50%
+		transform: translateY(0)
+	80%
+		transform: translateY(-5px)
+	100%
+		transform: translateY(0)
+
+.bg-1
+	background-image: url("../img/t-bg-1.png")
+	background-position: left bottom
+	background-repeat: no-repeat
+	background-size: auto
+	bottom: 0
+	position: absolute
+	width: 100%
+	height: 120px
+.bg-2
+	background-image: url("../img/t-bg-2.png")
+	background-position: left bottom
+	background-repeat: no-repeat
+	background-size: auto
+	bottom: 0
+	position: absolute
+	width: 100%
+	height: 120px
+.bg-3
+	background-image: url("../img/t-bg-3.png")
+	background-position: left bottom
+	background-repeat: no-repeat
+	background-size: auto
+	bottom: 0
+	position: absolute
+	width: 100%
+	height: 120px
+
+.copyright
+	margin-left: 1rem
+	color: #aaa
+.copy
+	display: flex
+	align-items: center
+	justify-content: center
+	padding: 2rem
+.cont	
+	align-items: center
+	display: flex
+	justify-content: space-between
+	width: 1200px
+
+footer
+	position: absolute
+	bottom: -200px
+	width: 100%

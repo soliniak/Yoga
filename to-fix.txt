@@ -1,0 +1,2 @@
+1. make group class "flex_it" - to add display flex to everything we need
+2. delete orphan classes
