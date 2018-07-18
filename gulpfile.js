@@ -24,13 +24,3 @@ gulp.task('watch', ['sass', 'browserSync'], function () {
   gulp.watch('*.html', browserSync.reload);
   gulp.watch('*.js', browserSync.reload);
 });
-
-
-//Watch task
-// gulp.task('watch', ['browserSync', 'styles', 'prefix'], function() {
-//     gulp.watch('sass/**/*.sass', ['prefix']);
-//     gulp.watch('sass/**/*.sass',['styles']);
-// 	   gulp.watch('sass/**/*.sass', browserSync.reload);
-//     gulp.watch('*.html', browserSync.reload);
-//     gulp.watch('*.js', browserSync.reload);
-// });

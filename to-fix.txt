@@ -1,2 +1,4 @@
-1. make group class "flex_it" - to add display flex to everything we need
-2. delete orphan classes
+1. Make group class "flex_it" - to add display flex to everything we need - done
+2. Delete orphan classes - done
+3. Mobile version
+4. If is on screen slide in
