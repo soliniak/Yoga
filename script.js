@@ -1,3 +1,67 @@
+'use strict';
+
+
+// ---------------------------------------- TOP BAR FIXED START -------------------------------------------------- //
+
+const menu = document.querySelector(".top_bar");
+
+window.addEventListener("scroll", ()=>{
+	if(window.scrollY > 50){
+		menu.classList.add("top_bar-fixed");
+	} else {
+		menu.classList.remove("top_bar-fixed");
+	}
+});
+
+// ------- TOP BAR FIXED END -------- //
+
+// ---------------------------------------- SMOOTH SCROLL START -------------------------------------------------- //
+
+// const links = document.querySelectorAll("a");
+
+// links.forEach((link, index)=>{
+	
+
+
+// 	console.log(link.href);
+// });
+
+
+
+// ----- SMOOTH SCROLL END --------- //
+
+// ---------------------------------------- MODAL START -------------------------------------------------- //
+
+const modal = document.querySelector(".modal");
+const regBtns = document.querySelectorAll(".free_reg_button"),
+	closeModal = document.querySelector(".close_modal"),
+	modalContainer = document.querySelector(".modal-container"),
+	body = document.querySelector("body");
+
+closeModal.addEventListener("click", ()=>{
+	modal.classList.toggle("show");
+	body.classList.toggle("ovhide");
+})
+
+modal.addEventListener("click", (e)=>{
+if (!modalContainer.contains(e.target)) {
+	modal.classList.toggle("show");
+	body.classList.toggle("ovhide");
+  }
+})
+
+regBtns.forEach((el, index)=>{
+	el.addEventListener("click", ()=>{
+		modal.classList.toggle("show");
+		body.classList.toggle("ovhide");
+	})
+});
+
+
+// -------- MODAL END ---------- //
+
+// ---------------------------------------- SECTION 04 - CAROUSEL START -------------------------------------------------- //
+
 const 	btnL 	= document.querySelector(".carousel_navigation-left"),
 		btnR 	= document.querySelector(".carousel_navigation-right"),
 		allEls 	= document.querySelectorAll(".carousel_element"),
@@ -41,3 +105,5 @@ function spin(to){
 		allEls[to].classList.remove("not-active");
 		allEls[to].classList.add("active", "el_center");
 };
+
+// ------ SECTION 04 - CAROUSEL END ---------- //

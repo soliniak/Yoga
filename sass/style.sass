@@ -7,7 +7,8 @@ $poppins: Poppins
 *
 	box-sizing: border-box
 
-
+html
+	scroll-behavior: smooth
 
 body
 	background: #fff
@@ -17,13 +18,35 @@ header
 	height: $header-height
 	width: 100%
 
+
 .margin-top-2
 	margin-top: 2rem
 
-a
-	color: #fff
+%hover-white
+	background-color: #fff
+	border-radius: 2px
+	color: $green
+	padding: .5rem 1rem
+
+%hover-green
+	background-color: $green
+	border-radius: 2px
+	padding: .5rem 1rem
+li
+	a
+		color: #fff
+		padding: .5rem 1rem
+		&:hover
+			text-decoration: underline
+			@extend %hover-white
+
+.footer-link
+	color: #aaa
+	padding: .5rem 1rem
 	&:hover
+		color: #fff
 		text-decoration: underline
+		@extend %hover-green
 
 .logo img
 	width: 4rem
@@ -33,8 +56,18 @@ a
 	justify-content: space-between
 	align-items: center
 	padding-top: 2rem
+	transition: all .5s ease
 	width: 1200px
 	z-index: 100
+
+.top_bar-fixed
+	position: fixed
+	padding: .2rem 1rem
+	top: 0
+	border-radius: 0 0 10px 10px
+	background-color: rgba(102, 169, 0, 1)
+	box-shadow: 0 0 10px 0 rgba(0,0,0, .3)
+
 
 .baner_img
 	width: 100%
@@ -47,7 +80,7 @@ a
 
 .baner_caption
 	width: 1200px
-	z-index: 100
+	z-index: 50
 
 
 .baner_caption-title
@@ -68,7 +101,6 @@ a
 		display: flex
 		li
 			font-size: 1.1rem
-			margin: 0 1rem
 
 .wave_top
 	background-image: url('../img/wave-top.png')
@@ -142,12 +174,6 @@ a
 	margin-left: 5rem
 	&-separator
 		margin-left: 10rem
-
-.footer-link
-	color: #aaa
-	margin-left: 2rem
-	&:hover
-		text-decoration: underline
 
 .flex-center
 	display: flex
@@ -313,6 +339,8 @@ a
 		font-family: $poppins
 		font-size: .9rem
 		font-weight: normal
+.carousel
+	width: 100%
 
 .carousel_container
 	width: 740px
@@ -402,17 +430,20 @@ a
 		opacity: 0
 		display: none
 
+$med-var: 0px
+
 .omm
-	transform: translateX(180px)
+	
 	animation: meditation 1.5s ease infinite
+	right: 20px
 
 @keyframes meditation
 	0%
-		transform: translateX(180px)
+		transform: translateX($med-var)
 	50%
-		transform: translateX(183px)
+		transform: translateX($med-var + 5)
 	100%
-		transform: translateX(180px)
+		transform: translateX($med-var)
 
 
 .quote
@@ -442,7 +473,7 @@ a
 
 
 .pricing-plans
-	width: 1210px
+	width: 1200px
 
 .tables
 	display: flex
@@ -638,3 +669,24 @@ footer
 	position: absolute
 	bottom: -260px
 	width: 100%
+
+.modal
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	min-height: 100%
+	width: 100%
+	background-color: rgba(0,0,0,.7)
+	z-index: 400
+
+.modal-container
+	width: 500px
+	height: 300px
+	background-color: $green
+	z-index: 600
+
+.show
+	display: flex
+.ovhide
+	overflow: hidden

@@ -4,8 +4,9 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- <link rel="shortcut icon" href="favicon.ico"> -->
-		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/media.css">
 		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 		<!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
 		<!-- <script	src="https://code.jquery.com/jquery-3.2.1.js"></script> -->
@@ -15,32 +16,32 @@
 	<body>
 		<header>
 			<div class="flex-center-center">
-				<menu class="top_bar">
+				<div class="top_bar">
 					<h1 class="logo"><img src="img/logo.png"></h1>
 					<nav class="header_menu">
 						<ul>
 							<li>
-								<a href="#">Welcome</a>
+								<a href="#welcome">Welcomes</a>
 							</li>
 							<li>
-								<a href="#">About</a>
+								<a href="#about">About</a>
 							</li>
 							<li>
-								<a href="#">Features</a>
+								<a href="#features">Features</a>
 							</li>
 							<li>
-								<a href="#">Testimonial</a>
+								<a href="#testimonial">Testimonial</a>
 							</li>
 							<li>
-								<a href="#">Pricing</a>
+								<a href="#pricing">Pricing</a>
 							</li>
 							<li>
 								<a href="#">Blog</a>
 							</li>								
 						</ul>
 					</nav>
-				</menu>
-				<div class="carousel flex-center-center abs-left" style="width: 100%">
+				</div>
+				<div class="carousel flex-center-center abs-left">
 					<figure class="baner_img flex-center-center" id="baner_1">
 						<img src="img/top-baner.jpg">
 						<figcaption class="baner_caption">
@@ -59,7 +60,7 @@
 			</div>
 		</header>
 		<main>
-			<section class="flex-center-center flex-column">
+			<section class="flex-center-center flex-column" id="welcome">
 				<div class="wave_top"></div>
 				<div class="s-content">
 					<div class="content_container">
@@ -83,7 +84,7 @@
 					<img src="img/lady-1.png">
 				</div>	
 			</section>
-			<section class="flex-center-center flex-column">
+			<section class="flex-center-center flex-column" id="about">
 				<div class="section_image margin-02 abs-left">
 					<img src="img/lady-2.png">
 				</div>
@@ -132,7 +133,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="flex-center-center flex-column">
+			<section class="flex-center-center flex-column" id="features">
 				<div class="s-content">
 					<div class="content_container flex-left-center">
 						<div class="section_text width-03">
@@ -164,14 +165,13 @@
 							</ul>
 
 						</div>
-						<div class="section_image abs-right move_right omm">
-							<img src="img/ppl.png">
-						</div>
 					</div>
-
-					</div>
+				</div>
+				<div class="section_image abs-right omm">
+					<img src="img/ppl.png">
+				</div>
 			</section>
-			<section class="flex-center-center flex-column">
+			<section class="flex-center-center flex-column" id="testimonial">
 				<div class="s-content">
 					<div class="content_container flex-right-center">
 						<div class="section_image abs-left move_left">
@@ -235,7 +235,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="flex-center">
+			<section class="flex-center" id="pricing">
 					<div class="content_container align_center align_column pricing-plans">
 						<div class="section_text position_left wider-text">
 							<h2 class="section_title">
@@ -385,6 +385,11 @@
 				</div>
 			</section>
 		</footer>
+		<div class="modal flex-center-center">
+			<div class="modal-container">
+				<button class="close_modal"> CLOSE </button>
+			</div>
+		</div>
 	<script src="script.js"></script>
 	</body>
 </html>
