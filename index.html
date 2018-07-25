@@ -17,26 +17,26 @@
 		<header>
 			<div class="flex-center-center">
 				<div class="top_bar">
-					<h1 class="logo"><img src="img/logo.png"></h1>
+					<h1 class="logo"><a href="#"><img src="img/logo.png" alt="MIRROR - Logo"></a></h1>
 					<nav class="header_menu">
 						<ul>
 							<li>
-								<a href="#welcome">Welcomes</a>
+								<a href="#welcome" class="top-nav">Welcome</a>
 							</li>
 							<li>
-								<a href="#about">About</a>
+								<a href="#about" class="top-nav">About</a>
 							</li>
 							<li>
-								<a href="#features">Features</a>
+								<a href="#features" class="top-nav">Features</a>
 							</li>
 							<li>
-								<a href="#testimonial">Testimonial</a>
+								<a href="#testimonial" class="top-nav">Testimonial</a>
 							</li>
 							<li>
-								<a href="#pricing">Pricing</a>
+								<a href="#pricing" class="top-nav">Pricing</a>
 							</li>
 							<li>
-								<a href="#">Blog</a>
+								<a href="#" class="top-nav">Blog</a>
 							</li>								
 						</ul>
 					</nav>
@@ -66,7 +66,7 @@
 					<div class="content_container">
 						<div class="section_text margin-01-separator width-01">
 							<h2 class="section_title">
-								<span class="section_number">01.</span> What is <span class="word-green">Yoga?</span>
+								<span class="section_number" tabindex="0">01.</span> What is <span class="word-green">Yoga?</span>
 							</h2>
 							<p>
 								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
@@ -92,7 +92,7 @@
 					<div class="content_container align_left">		
 						<div class="section_text margin-02-separator width-02">
 							<h2 class="section_title">
-								<span class="section_number">02.</span> Who can <span class="word-green">practice?</span>
+								<span class="section_number" tabindex="0">02.</span> Who can <span class="word-green">practice?</span>
 							</h2>
 							<p>
 								Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat
@@ -138,7 +138,7 @@
 					<div class="content_container flex-left-center">
 						<div class="section_text width-03">
 							<h2 class="section_title">
-								<span class="section_number">03.</span> Why choose <span class="word-green">us?</span>
+								<span class="section_number" tabindex="0">03.</span> Why choose <span class="word-green">us?</span>
 							</h2>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -173,7 +173,7 @@
 			</section>
 			<section class="flex-center-center flex-column" id="testimonial">
 				<div class="s-content">
-					<div class="content_container flex-right-center">
+					<div class="content_container flex-end-end">
 						<div class="section_image abs-left move_left">
 							<div class="carousel_container">
 								<nav class="carousel_navigation">
@@ -189,7 +189,7 @@
 						</div>
 						<div class="section_text width-04">
 							<h2 class="section_title">
-								<span class="section_number">04.</span> Some awesome <span class="word-green">speeches</span>
+								<span class="section_number" tabindex="0">04.</span> Some awesome <span class="word-green">speeches</span>
 							</h2>
 							<div class="q-container visible">
 								<q class="quote">
@@ -239,7 +239,7 @@
 					<div class="content_container align_center align_column pricing-plans">
 						<div class="section_text position_left wider-text">
 							<h2 class="section_title">
-								<span class="section_number">05.</span> Our <span class="word-green">pricing & plans</span>
+								<span class="section_number" tabindex="0">05.</span> Our <span class="word-green">pricing & plans</span>
 							</h2>
 							<p>
 								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
@@ -348,7 +348,7 @@
 					</div>
 			</section>			
 		</main>
-		<footer>
+		<footer class="main-footer">
 			<section>
 				<div class="footer-bg">
 					<div class="footer_content">
@@ -385,9 +385,27 @@
 				</div>
 			</section>
 		</footer>
-		<div class="modal flex-center-center">
-			<div class="modal-container">
-				<button class="close_modal"> CLOSE </button>
+		<div class="modal flex-center-center hide-modal">
+			<div class="modal-container flex-center-center flex-column">
+				<button class="close_modal" tabindex="5"> &cross; </button>
+				<form class="free-reg-form flex-right-center flex-column">
+					<div class="login">
+						<label for="login"> Login </label>
+						<input type="text" name="login" placeholder="example@domain.com" tabindex="1">
+					</div>
+					<div class="password">
+						<label for="password"> Password </label>
+						<input type="password" name="password" tabindex="2">
+					</div>
+					<div class="password">
+						<label for="password-verify"> Repeat password </label>
+						<input type="password" name="password-verify" tabindex="3">
+					</div>
+					<a class="reg-a" tabindex="4">Register</a>
+				</form>
+				<footer class="modal-footer">
+					Get your free registration today!
+				</footer>
 			</div>
 		</div>
 	<script src="script.js"></script>

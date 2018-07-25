@@ -30,6 +30,15 @@ window.addEventListener("scroll", ()=>{
 
 // ----- SMOOTH SCROLL END --------- //
 
+// const orderBtns = document.querySelectorAll(".order-now");
+// const tables = document.querySelectorAll(".table");
+
+// orderBtns.forEach((el, i)=>{
+// 	el.addEventListener("focus", ()=>{
+// 		tables[i].style.transform = "scale(2)";
+// 		})
+// })
+
 // ---------------------------------------- MODAL START -------------------------------------------------- //
 
 const modal = document.querySelector(".modal");
@@ -40,12 +49,14 @@ const regBtns = document.querySelectorAll(".free_reg_button"),
 
 closeModal.addEventListener("click", ()=>{
 	modal.classList.toggle("show");
+	modal.classList.remove("hide-modal");
 	body.classList.toggle("ovhide");
 })
 
 modal.addEventListener("click", (e)=>{
 if (!modalContainer.contains(e.target)) {
 	modal.classList.toggle("show");
+	modal.classList.remove("hide-modal");
 	body.classList.toggle("ovhide");
   }
 })
@@ -53,7 +64,9 @@ if (!modalContainer.contains(e.target)) {
 regBtns.forEach((el, index)=>{
 	el.addEventListener("click", ()=>{
 		modal.classList.toggle("show");
+		modal.classList.remove("hide-modal");
 		body.classList.toggle("ovhide");
+		modal.querySelector("input[name=login]").focus();
 	})
 });
 
