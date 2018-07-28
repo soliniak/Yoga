@@ -21,22 +21,22 @@
 					<nav class="header_menu">
 						<ul>
 							<li>
-								<a href="#welcome" class="top-nav">Welcome</a>
+								<a href="#welcome" class="green-on-white">Welcome</a>
 							</li>
 							<li>
-								<a href="#about" class="top-nav">About</a>
+								<a href="#about" class="green-on-white">About</a>
 							</li>
 							<li>
-								<a href="#features" class="top-nav">Features</a>
+								<a href="#features" class="green-on-white">Features</a>
 							</li>
 							<li>
-								<a href="#testimonial" class="top-nav">Testimonial</a>
+								<a href="#testimonial" class="green-on-white">Testimonial</a>
 							</li>
 							<li>
-								<a href="#pricing" class="top-nav">Pricing</a>
+								<a href="#pricing" class="green-on-white">Pricing</a>
 							</li>
 							<li>
-								<a href="#" class="top-nav">Blog</a>
+								<a href="#" class="green-on-white">Blog</a>
 							</li>								
 						</ul>
 					</nav>
@@ -81,13 +81,10 @@
 					</div>
 				</div>
 				<div class="section_image abs-right">
-					<img src="img/lady-1.png">
+					<img src="img/lady-1.png" alt="Stretching Lady in red tanktop">
 				</div>	
 			</section>
 			<section class="flex-center-center flex-column" id="about">
-				<div class="section_image margin-02 abs-left">
-					<img src="img/lady-2.png">
-				</div>
 				<div class="s-content">
 					<div class="content_container align_left">		
 						<div class="section_text margin-02-separator width-02">
@@ -110,6 +107,9 @@
 						</div>										
 					</div>
 				</div>
+				<div class="section_image margin-02 abs-left">
+					<img src="img/lady-2.png" alt="Stretching Lady in violet legins">
+				</div>				
 			</section>
 			<section>
 				<div class="free_registration">
@@ -123,7 +123,7 @@
 							</p>
 						</div>
 						<div class="reg_con-middle">
-							<img src="img/arrow.png" alt="arrow pointing at the button">
+							<img src="img/arrow.png" alt="arrow pointing at the free registration button">
 						</div>
 						<div class="reg_con-right">
 							<button class="free_reg_button">
@@ -168,30 +168,17 @@
 					</div>
 				</div>
 				<div class="section_image abs-right omm">
-					<img src="img/ppl.png">
+					<img src="img/ppl.png" alt="Five people, one behind another, sitting cross-legged.">
 				</div>
 			</section>
 			<section class="flex-center-center flex-column" id="testimonial">
 				<div class="s-content">
 					<div class="content_container flex-end-end">
-						<div class="section_image abs-left move_left">
-							<div class="carousel_container">
-								<nav class="carousel_navigation">
-									<button class="carousel_navigation-button carousel_navigation-left"> < </button>
-									<button class="carousel_navigation-button carousel_navigation-right"> > </button>
-								</nav>
-								<div class="carousel_elements">
-									<img src="img/client-1.png" alt="Female sitting im meditating position." class="carousel_element active el_center">
-									<img src="img/client-2.png" alt="Male sitting im meditating position." class="carousel_element not-active  el_right">
-									<img src="img/client-3.png" alt="Another male sitting im meditating position." class="carousel_element not-active el_left">
-								</div>
-							</div>
-						</div>
 						<div class="section_text width-04">
 							<h2 class="section_title">
 								<span class="section_number" tabindex="0">04.</span> Some awesome <span class="word-green">speeches</span>
 							</h2>
-							<div class="q-container visible">
+							<div class="q-container visible" aria-hidden="false">
 								<q class="quote">
 									Mauris a sem et enim bibendum pharetra. Duis mollis enim eu dictum luctus. Nam laoreet dapibus tortor. Nulla facilisi. 
 									Quisque gravida dapibus lacus sed mattis. Ut ullamcorper sollicitudin nunc in varius. In aliquam rutrum lectus at sollicitudin. 
@@ -204,7 +191,7 @@
 								</p>
 								</cite>
 							</div>
-							<div class="q-container hidden">
+							<div class="q-container hidden" aria-hidden="true">
 								<q class="quote">
 									Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
 									vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim 
@@ -217,7 +204,7 @@
 								</p>
 								</cite>
 							</div>
-							<div class="q-container hidden">
+							<div class="q-container hidden" aria-hidden="true">
 								<q class="quote">
 									Aenean condimentum nunc id volutpat vestibulum. Integer vel ex augue. 
 									Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
@@ -232,6 +219,19 @@
 								</cite>
 							</div>							
 						</div>
+						<div class="section_image abs-left move_left">
+							<div class="carousel_container">
+								<div class="carousel_elements">
+									<img src="img/client-1.png" alt="Female sitting im meditating position." class="carousel_element active el_center" aria-hidden="false">
+									<img src="img/client-2.png" alt="Male sitting im meditating position." class="carousel_element not-active  el_right" aria-hidden="true">
+									<img src="img/client-3.png" alt="Another male sitting im meditating position." class="carousel_element not-active el_left" aria-hidden="true">
+								</div>
+								<nav class="carousel_navigation">
+									<button class="carousel_navigation-button carousel_navigation-left" aria-label="Left arrow"> < </button>
+									<button class="carousel_navigation-button carousel_navigation-right" aria-label="Right arrow"> > </button>
+								</nav>								
+							</div>
+						</div>						
 					</div>
 				</div>
 			</section>
@@ -361,7 +361,7 @@
 							</p>
 						</div>
 						<div class="reg_con-middle">
-							<img src="img/arrow.png" alt="arrow pointing at the button">
+							<img src="img/arrow.png" alt="arrow pointing at the free registration button">
 						</div>
 						<div class="reg_con-right">
 							<button class="free_reg_button">
@@ -374,18 +374,18 @@
 			<section class="flex-center copy">
 				<div class="cont">
 					<div class="flex-center">
-						<img src="img/logo-green.png">
+						<img src="img/logo-green.png" alt="MIRROR - Logo">
 						<small class="copyright">
-							 &copy; Copyright 2016, jThemes All Rights Reserved
+							 &copy; Copyright 2016, <span class="word-green">jThemes</span> All Rights Reserved <a href="https://soliniak.github.io" class="white-on-green-author"> Coded by Rafi </span></a>
 						</small>
 					</div>
 					<div>
-						<a href="" class="footer-link">Sitemap</a><a href="" class="footer-link">Privacy & Policy</a><a href="" class="footer-link">Terms & Conditions</a>
+						<a href="" class="white-on-green">Sitemap</a><a href="" class="white-on-green">Privacy & Policy</a><a href="" class="white-on-green">Terms & Conditions</a>
 					</div>
 				</div>
 			</section>
 		</footer>
-		<div class="modal flex-center-center hide-modal">
+		<div class="modal flex-center-center hide-modal" aria-hidden="true">
 			<div class="modal-container flex-center-center flex-column">
 				<button class="close_modal" tabindex="5"> &cross; </button>
 				<form class="free-reg-form flex-right-center flex-column">
@@ -401,7 +401,7 @@
 						<label for="password-verify"> Repeat password </label>
 						<input type="password" name="password-verify" tabindex="3">
 					</div>
-					<a class="reg-a" tabindex="4">Register</a>
+					<a class="white-on-green-register" tabindex="4">Register</a>
 				</form>
 				<footer class="modal-footer">
 					Get your free registration today!

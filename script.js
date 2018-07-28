@@ -47,25 +47,27 @@ const regBtns = document.querySelectorAll(".free_reg_button"),
 	modalContainer = document.querySelector(".modal-container"),
 	body = document.querySelector("body");
 
-closeModal.addEventListener("click", ()=>{
+
+function openCloseToggle() {
 	modal.classList.toggle("show");
 	modal.classList.remove("hide-modal");
 	body.classList.toggle("ovhide");
-})
+	modal.setAttribute("aria-hidden", "true")
+}
+
+closeModal.addEventListener("click", ()=>{
+	openCloseToggle();
+});
 
 modal.addEventListener("click", (e)=>{
 if (!modalContainer.contains(e.target)) {
-	modal.classList.toggle("show");
-	modal.classList.remove("hide-modal");
-	body.classList.toggle("ovhide");
+	openCloseToggle();
   }
-})
+});
 
 regBtns.forEach((el, index)=>{
 	el.addEventListener("click", ()=>{
-		modal.classList.toggle("show");
-		modal.classList.remove("hide-modal");
-		body.classList.toggle("ovhide");
+		openCloseToggle();
 		modal.querySelector("input[name=login]").focus();
 	})
 });
@@ -96,17 +98,22 @@ btnL.addEventListener("click", ()=>{
 
 function spin(to){
 
+	// Testimonials text visiblity
 		qCont.forEach((q)=>{
 			q.classList.remove("visible");
 			q.classList.add("hidden");
+			q.setAttribute("aria-hidden", "true");
 		});
 
 		qCont[to].classList.add("visible");
 		qCont[to].classList.remove("hidden");
+		qCont[to].setAttribute("aria-hidden", "false");
 
+	// Testimonials images visiblity
 		allEls.forEach((a)=>{
 			a.classList.remove("active", "el_left", "el_right", "el_center");
 			a.classList.add("not-active");
+			a.setAttribute("aria-hidden", "true");			
 		});
 
 		let left = (to <= 0 ? 2 : (to-1));
@@ -117,6 +124,7 @@ function spin(to){
 
 		allEls[to].classList.remove("not-active");
 		allEls[to].classList.add("active", "el_center");
+		allEls[to].setAttribute("aria-hidden", "false");
 };
 
 // ------ SECTION 04 - CAROUSEL END ---------- //
