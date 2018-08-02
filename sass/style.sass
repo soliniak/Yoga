@@ -144,6 +144,7 @@ a.white-on-green-author, a.white-on-green-register
 
 .s-content
 	width: 1200px
+	overflow-x: hidden
 
 .content_container
 	margin-top: 4rem
@@ -220,7 +221,7 @@ a.white-on-green-author, a.white-on-green-register
 	height: 400px
 
 .wider-text
-	width: 55% !important
+	width: 55%
 	margin-bottom: 3rem
 
 .section_text
@@ -402,7 +403,7 @@ a.white-on-green-author, a.white-on-green-register
 			opacity: .1
 			z-index: 200
 		.el_left
-			left: 40px
+			left: -30px
 		.el_right
 			left: 350px
 		.el_center
@@ -530,44 +531,44 @@ td
 	display: flex
 	justify-content: center
 	position: relative
-	&.price
-		color: #333
-		height: 60px
-		font-family: $poppins
-		font-size: 3rem
-		font-weight: 800
-		margin-top: 2rem
-	&.target
-		color: #aaa
-		height: 30px
-		margin-bottom: 20px
-	&.plan
-		color: #aaa
-		background-color: #f6f6f6
-		border-left: 3px solid $green
-		border-right: 3px solid $green
-		height: 40px
-		font-family: $poppins
-		font-size: .8rem
-		font-weight: 300
-		text-transform: uppercase
-		letter-spacing: 2px
-		position: relative
-		z-index: 200
-		& p
-			z-index: 500
+.price
+	color: #333
+	height: 60px
+	font-family: $poppins
+	font-size: 3rem
+	font-weight: 800
+	margin-top: 2rem
+.target
+	color: #aaa
+	height: 30px
+	margin-bottom: 20px
+.plan
+	color: #aaa
+	background-color: #f6f6f6
+	border-left: 3px solid $green
+	border-right: 3px solid $green
+	height: 40px
+	font-family: $poppins
+	font-size: .8rem
+	font-weight: 300
+	text-transform: uppercase
+	letter-spacing: 2px
+	position: relative
+	z-index: 200
+	& p
+		z-index: 500
 
+.description
+	color: #c7c7c7
+	line-height: 1.5rem
+	padding: 1.5rem
+	text-align: center
+.order
+	margin-bottom: 20px
+	z-index: 100
+.tfooter
+	height: 73px	
 
-	&.description
-		color: #c7c7c7
-		line-height: 1.5rem
-		padding: 1.5rem
-		text-align: center
-	&.order
-		margin-bottom: 20px
-		z-index: 100
-	&.tfooter
-		height: 73px			
 .order-now
 	cursor: pointer
 	background: none

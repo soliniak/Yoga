@@ -134,7 +134,8 @@ a.white-on-green-author, a.white-on-green-register {
   flex-direction: column; }
 
 .s-content {
-  width: 1200px; }
+  width: 1200px;
+  overflow-x: hidden; }
 
 .content_container {
   margin-top: 4rem;
@@ -216,7 +217,7 @@ a.white-on-green-author, a.white-on-green-register {
   height: 400px; }
 
 .wider-text {
-  width: 55% !important;
+  width: 55%;
   margin-bottom: 3rem; }
 
 .section_text {
@@ -394,7 +395,7 @@ a.white-on-green-author, a.white-on-green-register {
       opacity: .1;
       z-index: 200; }
     .carousel_container .carousel_elements .el_left {
-      left: 40px; }
+      left: -30px; }
     .carousel_container .carousel_elements .el_right {
       left: 350px; }
     .carousel_container .carousel_elements .el_center {
@@ -519,42 +520,48 @@ td {
   display: flex;
   justify-content: center;
   position: relative; }
-  td.price {
-    color: #333;
-    height: 60px;
-    font-family: Poppins;
-    font-size: 3rem;
-    font-weight: 800;
-    margin-top: 2rem; }
-  td.target {
-    color: #aaa;
-    height: 30px;
-    margin-bottom: 20px; }
-  td.plan {
-    color: #aaa;
-    background-color: #f6f6f6;
-    border-left: 3px solid #66a900;
-    border-right: 3px solid #66a900;
-    height: 40px;
-    font-family: Poppins;
-    font-size: .8rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    position: relative;
-    z-index: 200; }
-    td.plan p {
-      z-index: 500; }
-  td.description {
-    color: #c7c7c7;
-    line-height: 1.5rem;
-    padding: 1.5rem;
-    text-align: center; }
-  td.order {
-    margin-bottom: 20px;
-    z-index: 100; }
-  td.tfooter {
-    height: 73px; }
+
+.price {
+  color: #333;
+  height: 60px;
+  font-family: Poppins;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-top: 2rem; }
+
+.target {
+  color: #aaa;
+  height: 30px;
+  margin-bottom: 20px; }
+
+.plan {
+  color: #aaa;
+  background-color: #f6f6f6;
+  border-left: 3px solid #66a900;
+  border-right: 3px solid #66a900;
+  height: 40px;
+  font-family: Poppins;
+  font-size: .8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 200; }
+  .plan p {
+    z-index: 500; }
+
+.description {
+  color: #c7c7c7;
+  line-height: 1.5rem;
+  padding: 1.5rem;
+  text-align: center; }
+
+.order {
+  margin-bottom: 20px;
+  z-index: 100; }
+
+.tfooter {
+  height: 73px; }
 
 .order-now {
   cursor: pointer;
