@@ -188,6 +188,7 @@ function close(){
 		item.style.marginLeft = -4000+"px";
 	})
 	toggleBtn.innerText = "OPEN";
+	toggleBtn.setAttribute('aria-expanded', 'false');
 	headerMenu.style.display = "none";
 }
 
@@ -197,5 +198,6 @@ function open(){
 		item.style.marginLeft = 0;
 	})
 	toggleBtn.innerText = "CLOSE";
+	toggleBtn.setAttribute('aria-expanded', 'true');
 	headerMenu.style.display = "block";
 }
