@@ -18,24 +18,25 @@
 			<div class="flex-center-center">
 				<div class="top_bar">
 					<h1 class="logo"><a href="#"><img src="img/logo.png" alt="MIRROR - Logo"></a></h1>
+					<button aria-expanded="false" aria-controls="menu" type="button" class="toggle-btn"> OPEN </button>
 					<nav class="header_menu">
-						<ul>
-							<li>
+						<ul class="menu" id="menu">
+							<li class="menu_item">
 								<a href="#welcome" class="green-on-white">Welcome</a>
 							</li>
-							<li>
+							<li class="menu_item">
 								<a href="#about" class="green-on-white">About</a>
 							</li>
-							<li>
+							<li class="menu_item">
 								<a href="#features" class="green-on-white">Features</a>
 							</li>
-							<li>
+							<li class="menu_item">
 								<a href="#testimonial" class="green-on-white">Testimonial</a>
 							</li>
-							<li>
+							<li class="menu_item">
 								<a href="#pricing" class="green-on-white">Pricing</a>
 							</li>
-							<li>
+							<li class="menu_item">
 								<a href="#" class="green-on-white">Blog</a>
 							</li>								
 						</ul>
@@ -219,19 +220,19 @@
 								</cite>
 							</div>							
 						</div>
-						<div class="section_image abs-left move_left">
+						<div class="section_image abs-left move_left carousel_testimonials">
 							<div class="carousel_container">
 								<div class="carousel_elements">
 									<img src="img/client-1.png" alt="Female sitting im meditating position." class="carousel_element active el_center" aria-hidden="false">
 									<img src="img/client-2.png" alt="Male sitting im meditating position." class="carousel_element not-active  el_right" aria-hidden="true">
 									<img src="img/client-3.png" alt="Another male sitting im meditating position." class="carousel_element not-active el_left" aria-hidden="true">
-								</div>
-								<nav class="carousel_navigation">
-									<button class="carousel_navigation-button carousel_navigation-left" aria-label="Left arrow"> < </button>
-									<button class="carousel_navigation-button carousel_navigation-right" aria-label="Right arrow"> > </button>
-								</nav>								
+								</div>							
 							</div>
-						</div>						
+						</div>	
+						<nav class="carousel_navigation">
+							<button class="carousel_navigation-button carousel_navigation-left" aria-label="Left arrow"> < </button>
+							<button class="carousel_navigation-button carousel_navigation-right" aria-label="Right arrow"> > </button>
+						</nav>						
 					</div>
 				</div>
 			</section>

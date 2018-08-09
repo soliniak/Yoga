@@ -25,7 +25,7 @@ header
 a
 	color: orange
 
-a.green-on-white
+.green-on-white
 	color: #fff
 	padding: .5rem 1rem
 	&:hover, &:focus, &:active
@@ -34,7 +34,7 @@ a.green-on-white
 		color: $green
 		text-decoration: underline
 	
-a.white-on-green
+.white-on-green
 	color: #aaa
 	padding: .5rem 1rem
 	&:hover, &:focus
@@ -43,7 +43,7 @@ a.white-on-green
 		color: #fff
 		text-decoration: underline
 
-a.white-on-green-author, a.white-on-green-register
+.white-on-green-author, .white-on-green-register
 	color: $green
 	padding: .5rem .4rem
 	&:hover, &:focus
@@ -62,13 +62,13 @@ a.white-on-green-author, a.white-on-green-register
 	height: 70px
 	justify-content: space-between
 	padding-top: 2rem
-	transition: all .5s ease
+	transition: all .2s ease
 	width: 1200px
-	z-index: 100
+	z-index: 500
 
 .top_bar-fixed
 	position: fixed
-	padding: .2rem 1rem
+	padding: 1rem 1rem
 	top: 0
 	border-radius: 0 0 10px 10px
 	background-color: rgba(102, 169, 0, 1)
@@ -144,11 +144,12 @@ a.white-on-green-author, a.white-on-green-register
 
 .s-content
 	width: 1200px
-	overflow-x: hidden
+	
 
 .content_container
 	margin-top: 4rem
 	margin-bottom: 7rem
+	position: relative
 
 .abs-right
 	position: absolute
@@ -335,58 +336,34 @@ a.white-on-green-author, a.white-on-green-register
 	display: flex
 	justify-content: space-between
 	flex-wrap: wrap
-	.reason
-		float: left
-		margin: 0 0 2rem 0
-		width: 45%
+.reason
+	float: left
+	margin: 0 0 2rem 0
+	width: 45%
 
-	.title-reason
-		font-family: $poppins
-		font-weight: bold
-		color: #000
-	.desc-reason
-		font-family: $poppins
-		font-size: .9rem
-		font-weight: normal
+.title-reason
+	font-family: $poppins
+	font-weight: bold
+	color: #000
+.desc-reason
+	font-family: $poppins
+	font-size: .9rem
+	font-weight: normal
+
 .carousel
 	width: 100%
+	display: flex
+	align-items: center
+	justify-content: flex-start
 
 .carousel_container
 	width: 740px
 	height: 400px
-	margin-right: 50px
+	// margin-right: 50px
 	position: relative
 	border: 1px solid transparent
 
-	.carousel_navigation
-		margin-top: 25%
-		display: flex
-		justify-content: center
-		z-index: 100
-		.carousel_navigation-button
-			display: flex
-			align-items: center
-			justify-content: center
-			color: #fff
-			font-family: $poppins
-			border-radius: 100%
-			height: 30px
-			width: 30px		
-			background-color: #333
-			border: 3px solid transparent
-			-webkit-background-clip: padding-box	
-			&:hover, &:focus
-				background-color: #66a900
-				border: 3px solid rgba(102, 169, 0, .35)
-				-webkit-background-clip: padding-box
-				cursor: pointer
-
-		&-left
-			margin-right: 50px
-			transform: translateX(20px)
-		&-right
-			margin-left: 170px
-
+	
 	.carousel_elements
 		position: absolute
 		top: 0
@@ -409,6 +386,38 @@ a.white-on-green-author, a.white-on-green-register
 		.el_center
 			left: 150px
 
+.carousel_navigation
+	display: flex
+	justify-content: center
+	z-index: 100
+	position: absolute
+	top: 120px
+	left: 60px
+	&-left
+		margin-left: 0
+	&-right
+		margin-left: 220px
+
+.carousel_navigation-button
+	display: flex
+	align-items: center
+	justify-content: center
+	color: #fff
+	font-family: $poppins
+	border-radius: 100%
+	height: 30px
+	width: 30px		
+	background-color: #333
+	border: 3px solid transparent
+	-webkit-background-clip: padding-box	
+	&:hover, &:focus
+		background-color: #66a900
+		border: 3px solid rgba(102, 169, 0, .35)
+		-webkit-background-clip: padding-box
+		cursor: pointer
+
+.toggle-btn
+	display: none
 .q-container
 	display: block
 
@@ -491,7 +500,7 @@ $med-var: 0px
 
 .table
 	background-color: #fff
-	border-collapse: collapse
+	border-collapse: separate
 	border-radius: 5px
 	border-spacing: 0
 	box-shadow: 0px 0px 24px 5px rgba(0,0,0, .1)
@@ -686,7 +695,7 @@ td
 	min-height: 100%
 	width: 100%
 	background-color: rgba(0,0,0,.7)
-	z-index: 400
+	z-index: 700
 	animation: hide-modal .1s ease forwards
 
 .hide-modal

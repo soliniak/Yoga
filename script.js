@@ -128,3 +128,74 @@ function spin(to){
 };
 
 // ------ SECTION 04 - CAROUSEL END ---------- //
+
+
+// ----------------------------- AUTO HIDE MENU BAR --------------------------------
+const html = document.querySelector('html');
+
+html.addEventListener('wheel', findScrollDirectionOtherBrowsers);
+let delta;
+
+function findScrollDirectionOtherBrowsers(event){
+    if (event.wheelDelta){
+        delta = event.wheelDelta;
+    }else{
+        delta = -1 * event.deltaY;
+    }
+
+    if (delta < 0){
+        menu.style.marginTop = -100+"%";
+    }else if (delta > 0){
+        menu.style.marginTop = 0;
+    }
+}
+
+let z = 0;
+html.addEventListener("touchmove", ()=>{
+	if(window.scrollY > z){
+        menu.style.marginTop = -100+"px";		
+	} else {
+        menu.style.marginTop = 0;
+	}
+	z = window.scrollY;
+})
+
+// ------------------------------------- BTN TOGGLE MENU -----------------------------
+
+const toggleBtn = document.querySelector(".toggle-btn"),
+		menuItem = document.querySelectorAll(".menu_item"),
+		headerMenu = document.querySelector(".header_menu");
+
+toggleBtn.addEventListener("click", ()=>{
+	if(toggleBtn.innerText !== "CLOSE"){
+		open();
+	} else {
+		close();
+	}
+});
+
+if(window.innerWidth < 670){
+	menuItem.forEach((item)=>{
+		item.addEventListener("click", ()=>{
+			close();
+		})
+	})
+}
+
+function close(){
+	menu.style.height = 90+"px";
+	menuItem.forEach((item)=>{
+		item.style.marginLeft = -4000+"px";
+	})
+	toggleBtn.innerText = "OPEN";
+	headerMenu.style.display = "none";
+}
+
+function open(){
+	menu.style.height = 100+"%";
+	menuItem.forEach((item)=>{
+		item.style.marginLeft = 0;
+	})
+	toggleBtn.innerText = "CLOSE";
+	headerMenu.style.display = "block";
+}
