@@ -174,7 +174,7 @@ toggleBtn.addEventListener("click", ()=>{
 	}
 });
 
-if(window.innerWidth < 670){
+if(window.innerWidth < 760){
 	menuItem.forEach((item)=>{
 		item.addEventListener("click", ()=>{
 			close();
