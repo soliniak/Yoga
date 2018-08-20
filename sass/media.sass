@@ -189,9 +189,8 @@
 // ############################## 760px #####################
 @media (max-width: 760px)
 	.header_menu
-		margin: 2rem 0
 		width: 100%
-		display: none
+		display: block
 	.menu
 		display: flex
 		align-items: center
@@ -199,10 +198,10 @@
 		flex-flow: column wrap
 	.menu_item
 		margin: 1rem 0
-		margin-left: -4000px
-		transition: all .2s ease
+		position: relative
+		left: -4000px
 		.green-on-white
-			font-size: 2rem
+			font-size: 1.7rem
 	.top_bar
 		height: 90px
 		justify-content: space-between
@@ -219,12 +218,12 @@
 		align-self: flex-start
 	.toggle-btn
 		display: block
-		height: 63px
 		border: none
 		background-color: transparent
-		width: 60px
+		width: 33px
 		color: #fff
-		font-size: 2rem
+		font-size: 1.5rem
+		margin: -2px
 // ############################## 600px #####################
 @media (max-width: 600px)
 	.description
@@ -289,6 +288,11 @@
 			line-height: 1rem
 		.order-now
 			padding: 0
+		.logo
+			img
+				width: 2rem
+		.top_bar
+			height: 55px
 // ############################## 380px #####################
 @media (max-width: 380px)
 		.section_title
