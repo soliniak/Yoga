@@ -121,13 +121,8 @@ a {
   font-size: 3.3rem;
   font-family: Poppins;
   font-weight: bold;
-<<<<<<< HEAD
-  text-transform: uppercase;
-}
-=======
   font-display: swap;
   text-transform: uppercase; }
->>>>>>> master
 
 .baner_caption-description {
   color: #fff;
@@ -375,11 +370,7 @@ a {
 .ol_text {
   font-family: Poppins;
   font-weight: bold;
-<<<<<<< HEAD
-}
-=======
   font-display: swap; }
->>>>>>> master
 
 .footer-bg {
   height: 425px;
@@ -534,13 +525,8 @@ a {
 .title-reason {
   font-family: Poppins;
   font-weight: bold;
-<<<<<<< HEAD
-  color: #000;
-}
-=======
   font-display: swap;
   color: #000; }
->>>>>>> master
 
 .desc-reason {
   font-family: Poppins;
