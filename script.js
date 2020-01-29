@@ -160,26 +160,33 @@ if (window.innerWidth < 760) {
 }
 
 function close() {
-  menuItem.forEach((item, i) => {
-    item.style.left = -4000 + "px";
-    item.style.transitionDelay = "0." + i * 10 + "s";
-  });
+  let d = 0
+  for(let i = menuItem.length; i > 0; i--) {
+    d++
+    console.log(i, menuItem[3])
+    menuItem[i-1].style.left = -1000 + "px";
+    menuItem[i-1].style.transitionDelay = "0." + d * 10 + "s";
+    menuItem[i-1].style.opacity = 0;
+  }
   toggleBtn.innerHTML = '<i class="fas fa-bars"></i>';
   toggleBtn.setAttribute("aria-expanded", "false");
-  menu.style.height = 55 + "px";
-  menu.style.transitionDelay = "." + menuItem.length;
+  menu.style.height = ""
+  menu.style.transitionDelay = "." + menuItem.length + 's';
+
   setTimeout(() => {
     menuLi.style.height = "0";
-  }, 500);
+  }, (menuItem.length + 1) * 100);
   body.classList.remove("ovhide");
   menuStatus = false;
 }
 
 function open() {
   menu.style.height = 100 + "%";
+  menu.style.transitionDelay = 0+ 's';
   menuLi.style.height = "auto";
   menuItem.forEach((item, i) => {
     item.style.left = 0 + "px";
+    item.style.opacity = 1;
     item.style.transitionDelay = "0." + i + "s";
   });
   toggleBtn.innerHTML = '<i class="fas fa-times"></i>';
