@@ -3,11 +3,26 @@ $side-margins: 0 17rem
 $green: #66a900
 $poppins: Poppins
 
+@mixin Poppins($fontWeight: "normal")
+	font-family: Poppins
+	font-weight: $fontWeight
+
 *
 	box-sizing: border-box
 
 html
 	scroll-behavior: smooth
+
+
+// @media screen and (orientation: landscape)
+// 	html
+// 		transform: rotate(-90deg)
+// 		transform-origin: left top
+// 		width: 100%
+// 		overflow-x: hidden
+// 		position: absolute
+// 		top: 100%
+// 		left: 0
 
 body
 	background: #fff
@@ -60,7 +75,7 @@ a
 	height: 70px
 	justify-content: space-between
 	padding-top: 2rem
-	transition: all .6s ease
+	transition: all .3s ease
 	width: 1200px
 	z-index: 500
 	position: fixed
@@ -90,8 +105,9 @@ a
 .baner_caption-title
 	color: #fff
 	font-size: 3.3rem
-	font-family: $poppins
-	font-weight: bold
+	@include Poppins(bold)
+	// font-family: $poppins
+	// font-weight: bold
 	text-transform: uppercase
 
 .baner_caption-description
@@ -163,8 +179,9 @@ a
 .section_title
 	padding: 2rem 0
 	color: #444
-	font-family: $poppins
-	font-weight: bold
+	@include Poppins(bold)
+	// font-family: $poppins
+	// font-weight: bold
 	font-size: 2rem
 	display: block
 	width: 100%
@@ -248,8 +265,9 @@ a
 	font-family: Times New Roman
 
 .ol_text
-	font-family: $poppins
-	font-weight: bold
+	@include Poppins(bold)
+	// font-family: $poppins
+	// font-weight: bold
 
 .footer-bg
 	height: 425px
@@ -280,7 +298,8 @@ a
 .reg_con-left
 	color: #fff
 	font-size: .7rem
-	font-family: $poppins
+	@include Poppins
+	// font-family: $poppins
 	letter-spacing: .1rem
 	h2
 		font-size: 2rem
@@ -343,13 +362,15 @@ a
 	width: 45%
 
 .title-reason
-	font-family: $poppins
-	font-weight: bold
+	@include Poppins(bold)
+	// font-family: $poppins
+	// font-weight: bold
 	color: #000
 .desc-reason
-	font-family: $poppins
+	@include Poppins
+	// font-family: $poppins
 	font-size: .9rem
-	font-weight: normal
+	// font-weight: normal
 
 .carousel
 	width: 100%
@@ -404,7 +425,8 @@ a
 	align-items: center
 	justify-content: center
 	color: #fff
-	font-family: $poppins
+	// font-family: $poppins
+	// @include Poppins
 	border-radius: 100%
 	height: 30px
 	width: 30px		
@@ -482,9 +504,10 @@ $med-var: 0px
 .quote_author
 	color: #000
 	display: block
-	font-family: $poppins
+	@include Poppins(700)
+	// font-family: $poppins
 	font-size: 1rem
-	font-weight: 700
+	// font-weight: 700
 	margin-top: 1.6rem
 .quote_desc
 	color: silver
@@ -511,6 +534,7 @@ $med-var: 0px
 	z-index: 100
 	transform: scale(1)	
 	animation: out .3s ease forwards
+	overflow: hidden
 	&:nth-child(even)
 		margin: 1rem
 	&:hover
@@ -537,7 +561,7 @@ $med-var: 0px
 		color: $green
 		text-decoration: underline
 		transform: rotate(0)
-td
+.price, .target, .plan, .order, .description
 	align-items: center
 	display: flex
 	justify-content: center
@@ -545,9 +569,10 @@ td
 .price
 	color: #333
 	height: 60px
-	font-family: $poppins
+	// font-family: $poppins
+	@include Poppins(800)
 	font-size: 3rem
-	font-weight: 800
+	// font-weight: 800
 	margin-top: 2rem
 .target
 	color: #aaa
@@ -559,9 +584,10 @@ td
 	border-left: 3px solid $green
 	border-right: 3px solid $green
 	height: 40px
-	font-family: $poppins
+	@include Poppins(300)
+	// font-family: $poppins
 	font-size: .8rem
-	font-weight: 300
+	// font-weight: 300
 	text-transform: uppercase
 	letter-spacing: 2px
 	position: relative
@@ -584,9 +610,10 @@ td
 	cursor: pointer
 	background: none
 	border: none
-	font-family: $poppins
+	@include Poppins(700)
+	// font-family: $poppins
 	font-size: .8rem
-	font-weight: 700
+	// font-weight: 700
 	text-transform: uppercase
 	letter-spacing: 1px
 	padding: 1rem
@@ -642,6 +669,16 @@ td
 	100%
 		transform: translateY(0)
 
+// @mixin tableFooter
+// 	background-position: left bottom
+// 	background-repeat: no-repeat
+// 	background-size: auto
+// 	bottom: 0
+// 	position: absolute
+// 	width: 105%
+// 	height: 120px
+	
+
 .bg-1
 	background-image: url("../img/t-bg-1.png")
 	background-position: left bottom
@@ -649,7 +686,7 @@ td
 	background-size: auto
 	bottom: 0
 	position: absolute
-	width: 100%
+	width: 105%
 	height: 120px
 .bg-2
 	background-image: url("../img/t-bg-2.png")
@@ -658,7 +695,7 @@ td
 	background-size: auto
 	bottom: 0
 	position: absolute
-	width: 100%
+	width: 105%
 	height: 120px
 .bg-3
 	background-image: url("../img/t-bg-3.png")
@@ -667,7 +704,7 @@ td
 	background-size: auto
 	bottom: 0
 	position: absolute
-	width: 100%
+	width: 105%
 	height: 120px
 
 .copyright
@@ -763,7 +800,8 @@ td
 		background-color: $green
 		border-radius: 20px 0 0 20px
 		color: #fff
-		font-family: $poppins
+		@include Poppins
+		// font-family: $poppins
 		height: 2rem
 		line-height: 2rem
 		padding: 0 1rem
