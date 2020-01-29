@@ -160,19 +160,6 @@ if (window.innerWidth < 760) {
 }
 
 function close() {
-<<<<<<< HEAD
-  menuItem.forEach((item, i) => {
-    item.style.left = -4000 + "px";
-    item.style.transitionDelay = "0." + i * 10 + "s";
-  });
-  toggleBtn.innerHTML = '<i class="fas fa-bars"></i>';
-  toggleBtn.setAttribute("aria-expanded", "false");
-  menu.style.height = 55 + "px";
-  menu.style.transitionDelay = "." + menuItem.length;
-  setTimeout(() => {
-    menuLi.style.height = "0";
-  }, 500);
-=======
   let d = 0
   for(let i = menuItem.length; i > 0; i--) {
     d++
@@ -189,24 +176,17 @@ function close() {
   setTimeout(() => {
     menuLi.style.height = "0";
   }, (menuItem.length + 1) * 100);
->>>>>>> master
   body.classList.remove("ovhide");
   menuStatus = false;
 }
 
 function open() {
   menu.style.height = 100 + "%";
-<<<<<<< HEAD
-  menuLi.style.height = "auto";
-  menuItem.forEach((item, i) => {
-    item.style.left = 0 + "px";
-=======
   menu.style.transitionDelay = 0+ 's';
   menuLi.style.height = "auto";
   menuItem.forEach((item, i) => {
     item.style.left = 0 + "px";
     item.style.opacity = 1;
->>>>>>> master
     item.style.transitionDelay = "0." + i + "s";
   });
   toggleBtn.innerHTML = '<i class="fas fa-times"></i>';

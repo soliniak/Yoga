@@ -82,13 +82,8 @@ a {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding-top: 2rem;
-<<<<<<< HEAD
-  -webkit-transition: all 0.6s ease;
-  transition: all 0.6s ease;
-=======
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
->>>>>>> master
   width: 1200px;
   z-index: 500;
   position: fixed;
@@ -431,17 +426,6 @@ a {
   color: #fff;
   font-size: 0.7rem;
   font-family: Poppins;
-<<<<<<< HEAD
-  letter-spacing: 0.1rem;
-}
-.reg_con-left h2 {
-  font-size: 2rem;
-  font-family: Times New Roman;
-  font-weight: bold;
-  letter-spacing: 0.1rem;
-  margin-bottom: 1rem;
-}
-=======
   font-weight: "normal";
   letter-spacing: .1rem; }
   .reg_con-left h2 {
@@ -450,7 +434,6 @@ a {
     font-weight: bold;
     letter-spacing: 0.1rem;
     margin-bottom: 1rem; }
->>>>>>> master
 
 .reg_con-middle {
   margin: 40px 3rem 0 3rem;
@@ -545,14 +528,8 @@ a {
 
 .desc-reason {
   font-family: Poppins;
-<<<<<<< HEAD
-  font-size: 0.9rem;
-  font-weight: normal;
-}
-=======
   font-weight: "normal";
   font-size: .9rem; }
->>>>>>> master
 
 .carousel {
   width: 100%;
@@ -786,13 +763,8 @@ a {
   display: block;
   font-family: Poppins;
   font-weight: 700;
-<<<<<<< HEAD
-  margin-top: 1.6rem;
-}
-=======
   font-size: 1rem;
   margin-top: 1.6rem; }
->>>>>>> master
 
 .quote_desc {
   color: silver;
@@ -826,49 +798,6 @@ a {
   z-index: 100;
   -webkit-transform: scale(1);
   transform: scale(1);
-<<<<<<< HEAD
-  -webkit-animation: out 0.3s ease forwards;
-  animation: out 0.3s ease forwards;
-}
-.table:nth-child(even) {
-  margin: 1rem;
-}
-.table:hover {
-  -webkit-animation: pop 0.4s ease forwards;
-  animation: pop 0.4s ease forwards;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  z-index: 200;
-}
-.table:hover .plan {
-  border-left: 3px solid #000;
-  border-right: 3px solid #000;
-}
-.table:hover .plan p {
-  color: #fff;
-  font-weight: 800;
-  font-size: 1rem;
-}
-.table:hover .plan:before {
-  content: "";
-  -webkit-animation: hov-plan 0.3s ease forwards;
-  animation: hov-plan 0.3s ease forwards;
-  background-color: #66a900;
-  width: 0px;
-  height: 100%;
-  position: absolute;
-  z-index: 150;
-}
-.table:hover .order-now,
-.table :focus.order-now {
-  -webkit-animation: rotate 0.5s 0.6s ease forwards;
-  animation: rotate 0.5s 0.6s ease forwards;
-  color: #66a900;
-  text-decoration: underline;
-  -webkit-transform: rotate(0);
-  transform: rotate(0);
-}
-=======
   -webkit-animation: out .3s ease forwards;
   animation: out .3s ease forwards;
   overflow: hidden; }
@@ -903,7 +832,6 @@ a {
     text-decoration: underline;
     -webkit-transform: rotate(0);
     transform: rotate(0); }
->>>>>>> master
 
 .price, .target, .plan, .order, .description {
   -webkit-box-align: center;
@@ -923,13 +851,8 @@ a {
   height: 60px;
   font-family: Poppins;
   font-weight: 800;
-<<<<<<< HEAD
-  margin-top: 2rem;
-}
-=======
   font-size: 3rem;
   margin-top: 2rem; }
->>>>>>> master
 
 .target {
   color: #aaa;
@@ -944,10 +867,6 @@ a {
   border-right: 3px solid #66a900;
   height: 40px;
   font-family: Poppins;
-<<<<<<< HEAD
-  font-size: 0.8rem;
-=======
->>>>>>> master
   font-weight: 300;
   font-size: .8rem;
   text-transform: uppercase;
@@ -980,10 +899,6 @@ a {
   background: none;
   border: none;
   font-family: Poppins;
-<<<<<<< HEAD
-  font-size: 0.8rem;
-=======
->>>>>>> master
   font-weight: 700;
   font-size: .8rem;
   text-transform: uppercase;
@@ -1184,14 +1099,8 @@ a {
   background-size: auto;
   bottom: 0;
   position: absolute;
-<<<<<<< HEAD
-  width: 100%;
-  height: 120px;
-}
-=======
   width: 105%;
   height: 120px; }
->>>>>>> master
 
 .bg-2 {
   background-image: url("../img/t-bg-2.png");
@@ -1200,14 +1109,8 @@ a {
   background-size: auto;
   bottom: 0;
   position: absolute;
-<<<<<<< HEAD
-  width: 100%;
-  height: 120px;
-}
-=======
   width: 105%;
   height: 120px; }
->>>>>>> master
 
 .bg-3 {
   background-image: url("../img/t-bg-3.png");
@@ -1216,14 +1119,8 @@ a {
   background-size: auto;
   bottom: 0;
   position: absolute;
-<<<<<<< HEAD
-  width: 100%;
-  height: 120px;
-}
-=======
   width: 105%;
   height: 120px; }
->>>>>>> master
 
 .copyright {
   margin-left: 1rem;
