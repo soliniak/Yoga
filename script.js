@@ -163,7 +163,6 @@ function close() {
   let d = 0
   for(let i = menuItem.length; i > 0; i--) {
     d++
-    console.log(i, menuItem[3])
     menuItem[i-1].style.left = -1000 + "px";
     menuItem[i-1].style.transitionDelay = "0." + d * 10 + "s";
     menuItem[i-1].style.opacity = 0;
